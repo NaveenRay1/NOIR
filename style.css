@@ -120,3 +120,41 @@ html,body{
 #over2 img{
 height: 3vw;
 }
+#scroll{
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    /* padding: 1vh; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#container{
+    width: 110%;
+    height: 100%;
+    /* background-color: black; */
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll img{
+    /* display: none; */
+    height: 90%;
+    border-radius: 50%;
+    width: 15%;
+    object-fit: cover;
+    object-position: 30% 30%;
+    margin: 1vw;
+}
+@keyframes anime {
+    from{
+        transform: translateX(0);
+
+    }
+    to{
+       transform: translateX(-100%);
+    }
+}
