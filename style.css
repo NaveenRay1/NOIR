@@ -301,3 +301,167 @@ letter-spacing: 2px;
     height: 100%;
     width: 100%;
 }
+#page5{
+    height: 100%;
+    width: 100%;
+    padding: 12vh;
+    position: relative;
+
+}
+#page5>h1{
+text-align: center;
+text-transform: uppercase;
+font-size: 5vh;
+font-family: monument;
+font-weight: 800;
+margin-bottom: 7vh;
+}
+.elem{
+    height: 15vh;
+    width: 100%;
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#page5 .elem:last-child {
+    border-bottom: 2px solid black;
+}
+.elem h4{
+    width: 6%;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.elem .elem-part-2 {
+    width: 46%;
+
+}
+.elem-part-2 h1{
+    font-size: 3.5vh;
+    font-weight: 600;
+}
+.elem-part-2 h5{
+    font-size: 1.2vh;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#footer {
+
+    height: 50vh; 
+    width: 100%;
+    background-color: #111111ee; 
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5vw 5vw 2vw 5vw; 
+}
+
+#footer-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70%;
+}
+
+#footer-brand {
+    width: 30%;
+}
+
+#footer-brand h1 {
+    font-family: monument; 
+    font-size: 3vw;
+    letter-spacing: -1px;
+    color: white;
+}
+
+#footer-links {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.link-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+}
+
+.link-col h3 {
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin-bottom: 1vh;
+    color: #fff;
+}
+
+.link-col a {
+    text-decoration: none;
+    color: #999; 
+    font-size: 1vw;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.link-col a:hover {
+    color: #fff; 
+}
+
+
+#footer-bottom {
+    width: 100%;
+    border-top: 1px solid #333; 
+    padding-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#copyright p {
+    font-size: 0.9vw;
+    color: #999;
+}
+
+#legal {
+    display: flex;
+    gap: 2vw;
+}
+
+#legal a {
+    text-decoration: none;
+    font-size: 0.9vw;
+    color: #999;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    #footer {
+        height: auto;
+        padding: 5vh 5vw;
+    }
+    #footer-top {
+        flex-direction: column;
+        gap: 5vh;
+    }
+    #footer-links {
+        width: 100%;
+        justify-content: space-between;
+    }
+    #footer-brand h1 {
+        font-size: 8vw;
+    }
+    .link-col h3 {
+        font-size: 4vw;
+    }
+    .link-col a {
+        font-size: 3.5vw;
+    }
+    #footer-bottom {
+        flex-direction: column;
+        gap: 2vh;
+        align-items: flex-start;
+    }
+    #copyright p, #legal a {
+        font-size: 3vw;
+    }
+}
